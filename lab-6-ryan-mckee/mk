@@ -1,0 +1,5 @@
+#!/bin/bash
+#rm a.out 2> /dev/null
+
+#gcc main.c util.c -fcommon
+gcc main.c util.c

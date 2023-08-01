@@ -1,0 +1,35 @@
+
+
+Instructions: Please add this file to your git repo with the name `answers.txt`. 
+
+
+1) Describe what the Super Node is and what role it plays in the EXT2 file system. 
+
+A:
+The super node contains important information about the filesystem, including the identifier for the filesystem type, the number of inodes, etc
+
+2) Describe what the INODE is and what role it plays in the EXT2 file system.
+
+A:
+An inode is a data structure that represents a file and contains information such as its name and other inodes/data blocks
+
+3) If we want inode number 10151 describe the algorithm needed get INODE * pointer pointing at it.
+
+A:
+Using mailman's algorithm, we can get the block number of the linear address (10151-1)/8 + inodes_block(10) = 1278.
+We can then get the pointer to the inode by taking the block, and adding the offset=(10151-1) % 8 = 6
+
+4) How many blocks can a single INODE * struct have at its disposal?
+
+A:
+assuming 12 direct blocks, 256 indirect blocks, 256^2 double indirect blocks, 256^3 triple indirect blocks, 16843020 blocks total?
+
+5) Describe what the content (in a general case) you might find in the block of memory you get from *ip -> i_block[i]
+
+A:
+the i_block array contains a list of pointers to disk blocks of the file
+
+6) If `ip -> i_block[0] = 0;` what does that mean?
+
+A:
+if the first i_block is 0, then the inode has no direct blocks
