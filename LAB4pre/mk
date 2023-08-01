@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cc -o server.bin server.c
+cc -o client.bin client.c
+#chmod u+s server.bin

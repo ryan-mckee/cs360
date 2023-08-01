@@ -1,0 +1,144 @@
+enter main
+&argc=ffa49b30 argv=ffa49bd4 env=ffa49be8
+&a=ffa49af8 &b=ffa49af4 &c=ffa49af0
+argc=4
+arg0=./a.out arg1=one arg2=two arg3=three 
+enter A
+&d=ffa49acc &e=ffa49ac8 &f=ffa49ac4
+enter B
+&g=ffa49a9c &h=ffa49a98 &i=ffa49a94
+enter C
+&u=ffa49a64 &v=ffa49a60 &w=ffa49a5c &i=ffa49a58
+FP=ffa49a78
+FP=ffa49a78 -> FP=ffa49aa8 -> FP=ffa49ad8 -> FP=ffa49b18 -> NULL
+#0=       a
+#1=       1
+#2=ffa49a6c
+#3=ffa49b30
+#4=56600000
+#5=ffa49aa8
+#6=565fd3a8
+#7=       7
+#8=       8
+#9=ffa49a98
+#10=ffa49a94
+#11=f7f57d20
+#12=       9
+#13=       8
+#14=       7
+#15=ffa49b30
+#16=56600000
+#17=ffa49ad8
+#18=565fd329
+#19=       4
+#20=       5
+#21=ffa49ac8
+#22=ffa49ac4
+#23=ffa49b18
+#24=       6
+#25=       5
+#26=       4
+#27=ffa49b30
+#28=56600000
+#29=ffa49b18
+#30=565fd2a0
+#31=       1
+#32=       2
+#33=ffa4a7b5
+#34=ffa49af0
+#35=       3
+#36=       2
+#37=       1
+#38=       4
+#39=       4
+#40=ffa49bd4
+#41=ffa49be8
+#42=ffa49b30
+#43=       0
+#44=f7f57000
+#45=       0
+#46=f7d90e46
+#47=f7f57000
+#48=f7f57000
+#49=       0
+#50=f7d90e46
+#51=       4
+#52=ffa49bd4
+#53=ffa49be8
+#54=ffa49b64
+#55=ffa49b74
+#56=f7fa3b40
+#57=f7f70410
+#58=f7f57000
+#59=       1
+#60=       0
+#61=ffa49bb8
+#62=       0
+#63=f7fa3000
+#64=       0
+#65=f7f57000
+#66=f7f57000
+#67=       0
+#68=ee9b7bde
+#69=15b6e5ce
+#70=       0
+#71=       0
+#72=       0
+#73=       4
+#74=565fd080
+#75=       0
+#76=f7f8e8f0
+#77=f7f89230
+#78=56600000
+#79=       4
+#80=565fd080
+#81=       0
+#82=565fd0b1
+#83=565fd1b9
+#84=       4
+#85=ffa49bd4
+#86=565fd4d0
+#87=565fd530
+#88=f7f89230
+#89=ffa49bcc
+#90=      1c
+#91=       4
+#92=ffa4a7a5
+#93=ffa4a7ad
+#94=ffa4a7b1
+#95=ffa4a7b5
+#96=       0
+#97=ffa4a7bb
+#98=ffa4a7cb
+#99=ffa4a7dd
+#100=ffa4a7ec
+#101=ffa4a821
+#102=ffa4a82e
+#103=ffa4a843
+#104=ffa4a865
+#105=ffa4a872
+#106=ffa4a881
+#107=ffa4a891
+#108=ffa4a8a2
+#109=ffa4ae91
+#110=ffa4aec0
+#111=ffa4aed7
+#112=ffa4aee8
+#113=ffa4aef2
+#114=ffa4aefd
+#115=ffa4af05
+#116=ffa4af10
+#117=ffa4af21
+#118=ffa4af40
+#119=ffa4af57
+#120=ffa4af67
+#121=ffa4afa5
+#122=ffa4afb9
+#123=ffa4afe6
+#124=       0
+#125=      20
+#126=f7f76550
+#127=      21
+exit B
+exit A
+exit main

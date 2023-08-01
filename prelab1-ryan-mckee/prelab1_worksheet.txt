@@ -1,0 +1,172 @@
+              CS360 Pre-LAB1 Assignment            
+                    DUE: 1-18-2022 
+
+     Record the observed sizes in a table:
+
+          Case  | a.out |  TEXT  |  DATA  |  BSS   |
+        --------------------------------------------
+          (1)   | 16632 |   1501 |    584 |      8 |
+        --------------------------------------------  
+          (2)   | 16632 |   1501 |    584 |  40032 |
+        --------------------------------------------
+	  (3)   | 56648 |   1501 |  40600 |      8 |
+        --------------------------------------------
+          (4)   | 16632 |   1501 |    584 |      8 |
+        --------------------------------------------
+ 
+                  ANSWER THESE QUESTIONS:
+
+1. An a.out file has TEXT, DATA and BSS sections (Read Chapter 2.3.6).
+      Which sections are in a.out, which section is NOT in a.out?
+      WHY?______________________________________________________
+
+The text section contains the executable code of the program.
+The data section contains data for initialized global and static local variables.
+Both the text and data are included in the a.out file, along with the header containing size information for these sections.
+This is important as it needs to store the initialized values in the file.
+
+The bss section contains uninitialized global and static local variables, and is not in a.out.
+There are no initialized values to store, so only the size of bss is recorded.
+
+2. For the variables g, a, b, c, d,
+
+      Which variables are in DATA section? ___________________________________
+int g[10000] = {1};
+      Which variables are in BSS  section? ___________________________________
+int g, int g[10000];
+      ANY local variables in a.out?        ___________________________________
+No, they are not stored in a.out
+
+=========================  Part 2 =============================
+
+Copy and paste stack contents here. Include annotations identifying addresses as LOCAL VARIABLES, PARAMETERS, stack frame pointer of each function.
+
+
+#0=       a	Local Variable
+#1=       1	Local Variable
+#2=ffa49a6c
+#3=ffa49b30
+#4=56600000
+#5=ffa49aa8	Frame Pointer
+#6=565fd3a8
+#7=       7	Parameter
+#8=       8	Parameter
+#9=ffa49a98
+#10=ffa49a94
+#11=f7f57d20
+#12=       9	Local Variable
+#13=       8	Local Variable
+#14=       7	Local Variable
+#15=ffa49b30
+#16=56600000
+#17=ffa49ad8	Frame Pointer
+#18=565fd329
+#19=       4	Parameter
+#20=       5	Parameter
+#21=ffa49ac8
+#22=ffa49ac4
+#23=ffa49b18
+#24=       6	Local Variable
+#25=       5	Local Variable
+#26=       4	Local Variable
+#27=ffa49b30
+#28=56600000
+#29=ffa49b18	Frame Pointer
+#30=565fd2a0
+#31=       1	Parameter
+#32=       2	Parameter
+#33=ffa4a7b5
+#34=ffa49af0
+#35=       3	Local Variable
+#36=       2	Local Variable
+#37=       1	Local Variable
+#38=       4
+#39=       4	Parameter
+#40=ffa49bd4
+#41=ffa49be8
+#42=ffa49b30
+#43=       0
+#44=f7f57000
+#45=       0
+#46=f7d90e46
+#47=f7f57000
+#48=f7f57000
+#49=       0
+#50=f7d90e46
+#51=       4
+#52=ffa49bd4
+#53=ffa49be8
+#54=ffa49b64
+#55=ffa49b74
+#56=f7fa3b40
+#57=f7f70410
+#58=f7f57000
+#59=       1
+#60=       0
+#61=ffa49bb8
+#62=       0
+#63=f7fa3000
+#64=       0
+#65=f7f57000
+#66=f7f57000
+#67=       0
+#68=ee9b7bde
+#69=15b6e5ce
+#70=       0
+#71=       0
+#72=       0
+#73=       4
+#74=565fd080
+#75=       0
+#76=f7f8e8f0
+#77=f7f89230
+#78=56600000
+#79=       4
+#80=565fd080
+#81=       0
+#82=565fd0b1
+#83=565fd1b9
+#84=       4
+#85=ffa49bd4
+#86=565fd4d0
+#87=565fd530
+#88=f7f89230
+#89=ffa49bcc
+#90=      1c
+#91=       4
+#92=ffa4a7a5
+#93=ffa4a7ad
+#94=ffa4a7b1
+#95=ffa4a7b5
+#96=       0
+#97=ffa4a7bb
+#98=ffa4a7cb
+#99=ffa4a7dd
+#100=ffa4a7ec
+#101=ffa4a821
+#102=ffa4a82e
+#103=ffa4a843
+#104=ffa4a865
+#105=ffa4a872
+#106=ffa4a881
+#107=ffa4a891
+#108=ffa4a8a2
+#109=ffa4ae91
+#110=ffa4aec0
+#111=ffa4aed7
+#112=ffa4aee8
+#113=ffa4aef2
+#114=ffa4aefd
+#115=ffa4af05
+#116=ffa4af10
+#117=ffa4af21
+#118=ffa4af40
+#119=ffa4af57
+#120=ffa4af67
+#121=ffa4afa5
+#122=ffa4afb9
+#123=ffa4afe6
+#124=       0
+#125=      20
+#126=f7f76550
+#127=      21
